@@ -3,8 +3,8 @@ import HeaderLink from '@/components/HeaderLink'
 import MenuIcon from './icons/MenuIcon.astro'
 import Search from '@/components/Search'
 import TagIcon from './icons/TagIcon.astro'
+import InsightsIcon from './icons/InsightsIcon.astro'
 import ToggleTheme from './ToggleTheme.astro'
-import { SOCIALNETWORKS } from '@/data/links'
 ---
 
 <header class='relative flex items-center h-12 font-semibold'>
@@ -21,18 +21,15 @@ import { SOCIALNETWORKS } from '@/data/links'
 				class='flex flex-col gap-4 md:flex-row md:border-r-2 border-black pr-4 dark:border-white'
 			>
 				<HeaderLink href='/tags' class='flex items-center gap-1 text-2xl md:text-base'>
-					<TagIcon /> 标签
+					标签
 				</HeaderLink>
-			</div>
-
-			<div class='flex justify-center items-center md:justify-end gap-3 md:p-0'>
-				{
-					SOCIALNETWORKS.map((network) => (
-						<HeaderLink class='' href={network.url} target='_blank' aria-label={network.name}>
-							<span>{<network.icon />} </span>
-						</HeaderLink>
-					))
-				}
+				<HeaderLink
+					href='https://watcha.cn'
+					class='flex items-center gap-1 text-2xl md:text-base'
+					target='_blank'
+				>
+					观猹 Insights
+				</HeaderLink>
 			</div>
 		</nav>
 	</div>
