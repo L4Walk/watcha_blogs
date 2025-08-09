@@ -10,10 +10,10 @@ interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-	site: 'https://blog-template-gray.vercel.app/', // Write here your website url
+	site: 'https://docs.watcha.cn/', // Write here your website url
 	author: 'watcha', // Site author
 	title: '观猹 Blog', // Site title.
-	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', // Description to display in the meta tags
+	description: '观猹文档', // Description to display in the meta tags
 	lang: 'zh-CN',
 	ogLocale: 'zh_CN',
 	shareMessage: '分享这篇文章', // 在社交媒体上分享文章的消息
