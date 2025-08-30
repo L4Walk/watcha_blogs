@@ -7,7 +7,5 @@ const { date } = Astro.props
 ---
 
 <time class='text-sm font-bold text-opacity-60' datetime={date.toISOString()}>
-	{
-		`${date.getFullYear()} 年 ${date.toLocaleString('zh-CN', { month: 'short' })} ${date.getDate()} 日`
-	}
+	{`${date.getFullYear()} 年 ${date.getMonth() + 1} 月 ${date.getDate()} 日`}
 </time>
